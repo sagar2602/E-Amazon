@@ -1,0 +1,25 @@
+{
+  "name": "e-amazon",
+  "version": "1.0.0",
+  "description": "Amazon clone",
+  "main": "App.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sagar2602/E-Amazon.git"
+  },
+  "keywords": [],
+  "author": "Sagar Verma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sagar2602/E-Amazon/issues"
+  },
+  "homepage": "https://github.com/sagar2602/E-Amazon#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
