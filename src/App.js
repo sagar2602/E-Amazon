@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import Header from "./components/Header";
 
 /**
 * Header
@@ -34,11 +35,10 @@ import ReactDOM from "react-dom/client";
 * - Contact Info
 */
 
-const heading = React.createElement(
-  "h1",
-  { id: "heading" },
-  "Hi React!"
-);
-// console.log(heading);
+const AppLayout = () => {
+  return <div className="amazon-wrapper">
+    <Header />
+  </div>
+}
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(heading);
+root.render(<AppLayout />);
