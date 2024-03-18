@@ -4,6 +4,40 @@
   justify-content: space-between;
 }
 
-.logo, .location-logo {
+.location-logo {
   width: 50px
 }
+
+.header-address {
+  display: flex;
+  align-items: center;
+}
+
+.location-logo {
+  margin-right: 10px;
+}
+
+.header-address > span {
+  display: flex;
+  flex-direction: column;
+}
+
+.state,
+.pin {
+  margin-top: 5px;
+}
+
+.state {
+  padding-right: 5px;
+}
+
+.logo {
+  margin-left: 11px;
+  width: 50px;
+}
+
+/* a.logo {
+  min-width: 10px;
+  display: inline-block;
+  text-decoration: none;
+} */
