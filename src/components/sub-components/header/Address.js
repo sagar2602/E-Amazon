@@ -1,4 +1,4 @@
-import { LOC_URL } from "../../config/constants.js";
+import { LOC_URL } from "../../../config/constants.js";
 
 const Address = () => {
   return (

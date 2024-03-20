@@ -1,4 +1,4 @@
-import { LOGO_URL } from "../../config/constants.js";
+import { LOGO_URL } from "../../../config/constants.js";
 
 const Logo = () => {
   return (
