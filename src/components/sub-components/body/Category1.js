@@ -1,11 +1,18 @@
-import { API_URL } from "../../../config/constants.js";
+import Title from "./Title.js";
 
 const Category1 = (props) => {
-  
+  const { prodData } = props;
   return (
-    <div className="cat-1">
-      <img className="img-cat-1"></img>
-    </div>
+   <div className="comp1">
+    <a href={prodData.productLink}>
+      <img className="pic" src={prodData.formattedImageUrl} >
+      </img>
+    </a>
+    <span className="title">{ prodData.title }</span>
+    <span className="price">{ prodData.formattedPriceV2 }</span>
+    <span className="rating">{ prodData.ratingValue }</span>
+    <span className="brand">{prodData.brand}</span>
+   </div>
   )
 }
 

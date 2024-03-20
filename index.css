@@ -36,6 +36,21 @@
   width: 50px;
 }
 
+.comp1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.pic {
+  width: 100px;
+}
+
+.pick-up {
+  display: flex;
+  border: 5px;
+  width: 100%;
+}
+
 /* a.logo {
   min-width: 10px;
   display: inline-block;

@@ -1,7 +1,8 @@
-const Title = () => {
+const Title = (props) => {
+  const { data } = props;
   return (
     <span className="title">
-      Static Title
+      { data }
     </span>
   )
 }

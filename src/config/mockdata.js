@@ -1,4 +1,4 @@
-const resObj = [
+const prodObj = [
   {
       "singularItem": false,
       "promotionType": null,
@@ -1209,4 +1209,4 @@ const resObj = [
   }
 ];
 
-export default resObj;
+export default prodObj;
