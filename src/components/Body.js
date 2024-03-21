@@ -6,11 +6,24 @@ import Category3 from "./sub-components/body/Category3";
 import Category4 from "./sub-components/body/Category4";
 import Category5 from "./sub-components/body/Category5";
 import prodObj from "../config/mockdata.js";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Shimmer from "./Shimmer";
 
 const Body = () => {
-  const [ listOfProducts, setProducts ] = useState(prodObj.slice(0, 10));
-  return (
+  const [ listOfProducts, setProducts ] = useState([]);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      fetchData();
+    }, 1000);
+  }, []);
+
+  const fetchData = () => {
+    const list = prodObj.slice(0, 10);
+    setProducts(list);
+  };
+
+  return (listOfProducts.length === 0) ? <Shimmer/> : (
     <div className="body-wrapper">
       <button className="top-products" onClick={() => {
         console.log(prodObj);

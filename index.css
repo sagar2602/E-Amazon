@@ -47,12 +47,16 @@
 
 .pick-up {
   display: flex;
+  flex-direction: column;
   border: 5px;
   width: 100%;
 }
 
-/* a.logo {
-  min-width: 10px;
-  display: inline-block;
-  text-decoration: none;
-} */
+.shimmer-card {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  /* border: 5px; */
+  background-color: #f0f0f0;
+  margin: 20px;
+}
