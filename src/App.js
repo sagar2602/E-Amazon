@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
 import Body from "./components/Body";
+import { useState, useEffect } from "react";
 
 /**
 * Header
@@ -37,9 +38,10 @@ import Body from "./components/Body";
 */
 
 const AppLayout = () => {
+  const [ objtoMap, setObj ] = useState({});
   return <div className="amazon-wrapper">
-    <Header />
-    <Body />
+    <Header objMap={objtoMap} setObj={setObj} />
+    <Body objMap={objtoMap} setObj={setObj} />
   </div>
 }
 const root = ReactDOM.createRoot(document.getElementById("root"));

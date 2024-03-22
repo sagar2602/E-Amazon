@@ -9,7 +9,7 @@ import prodObj from "../config/mockdata.js";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 
-const Body = () => {
+const Body = ({objMap, setObj}) => {
   const [ listOfProducts, setProducts ] = useState([]);
 
   useEffect(() => {
@@ -21,7 +21,11 @@ const Body = () => {
   const fetchData = () => {
     const list = prodObj.slice(0, 10);
     setProducts(list);
+    setObj(list);
   };
+
+  console.log('========in body==============');
+  console.log(objMap);
 
   return (listOfProducts.length === 0) ? <Shimmer/> : (
     <div className="body-wrapper">
@@ -31,11 +35,12 @@ const Body = () => {
           (product) => product.ratingValue > 4.1
         );
         setProducts(topProducts);
+        setObj(topProducts);
       }}> Top Products
       </button>
       <div className="pick-up">
         <Title data="Pick up where you left off" />
-        { listOfProducts.map(item => <Category1 prodData={item} />)}
+        { objMap.map(item => <Category1 prodData={item} />)}
       </div>
     </div>
   )

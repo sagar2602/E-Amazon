@@ -5,12 +5,13 @@ import Lang from "./sub-components/header/Lang";
 import Details from "./sub-components/header/Details";
 import Returns from "./sub-components/header/Returns";
 
-const Header = () => {
+
+const Header = ({objMap, setObj}) => {
   return (
     <div className="header">
       <Logo />
       <Address />
-      <Search />
+      <Search objMap={objMap} setObj={setObj} />
       <Lang />
       <Details />
       <Returns />
