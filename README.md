@@ -26,3 +26,18 @@ upgrade go (1.15 >  1.17)
 
 to print object
 	fmt.Printf("object= %+v", person)
+
+
+
+
+#####
+$ git remote -v
+
+origin  git@github.com:sagar2602/E-Amazon.git (fetch)
+origin  git@github.com:sagar2602/E-Amazon.git (push)
+personal        https://mrt14august@github.com/sagar2602/E-Amazon.git (fetch)
+personal        https://mrt14august@github.com/sagar2602/E-Amazon.git (push)
+
+
+Backend/backend-go/controllers/personController.go
+Backend/backend-go/routes/routes.go
