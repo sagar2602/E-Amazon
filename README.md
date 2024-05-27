@@ -4,7 +4,8 @@ React
 Splitwise
 
 #### https://github.com/umangraval/Go-Mongodb-REST-boilerplate?tab=readme-ov-file
-
+#### https://github.com/react-boilerplate/react-boilerplate
+//npm run dev  //--vite
 
 pwd= /Users/nritunjaymishra/Documents/myproj/E-Amazon/Backend/backend-go
 go run main.go

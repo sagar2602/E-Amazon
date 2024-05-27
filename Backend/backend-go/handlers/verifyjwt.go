@@ -74,8 +74,9 @@ func CreateHashedPass(userPass string) string {
 
 
 func VerifyPassword(storedHash, userPass string) bool {
-	fmt.Println("🚀 ~ funcVerifyPassword ~ userPass:", userPass)
-	fmt.Println("🚀 ~ funcVerifyPassword ~ storedHash:", storedHash)
+	// fmt.Println("🚀 ~ funcVerifyPassword ~ userPass:", userPass)
+	// fmt.Println("🚀 ~ funcVerifyPassword ~ storedHash:", storedHash)
+	
 	// Combine user password with the salt
 	salt := []byte(userPass + os.Getenv("SALT_SECRET"))
 
@@ -83,6 +84,7 @@ func VerifyPassword(storedHash, userPass string) bool {
 	err := bcrypt.CompareHashAndPassword([]byte(storedHash), salt)
 	if err != nil {
 		// If passwords do not match or an error occurred
+		fmt.Println("🚀 ~ at VerifyPassword err:", err)
 		return false
 	}
 	return true

@@ -15,7 +15,7 @@ func DotEnvVariable(key string) string {
 	// err := godotenv.Load("../../.env")
 	err := godotenv.Load("/Users/nritunjaymishra/Documents/myproj/E-Amazon/Backend/backend-go/.env")
 
-    fmt.Println("err >>>>>>", err)
+    fmt.Println("err at ENV load >>>>>>", err)
 	if err != nil {
 		log.Fatalf("Error loading .env file")
 	}

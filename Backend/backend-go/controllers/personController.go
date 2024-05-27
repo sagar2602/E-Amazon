@@ -206,7 +206,9 @@ var LoginUser = http.HandlerFunc(func(response http.ResponseWriter, request *htt
 	fmt.Println("\n err err11 = = = >>", errMongo, "\n existingUser =>>", existingUser)
 
 	if errMongo != nil {
-		middlewares.ErrorResponse("Error while saving data", response)
+		// middlewares.ErrorResponse(`error while fetching the data+${errMongo}` , response)
+		middlewares.ErrorResponse(fmt.Sprintf("error while fetching the data: %v", errMongo), response)
+
 		return
 	}
 
@@ -222,6 +224,7 @@ var LoginUser = http.HandlerFunc(func(response http.ResponseWriter, request *htt
 	fmt.Println("🚀 ~ LoginUser ~ isValidUser:", isValidUser)
 	
 	if isValidUser {
+		middlewares.GenerateJWT()
 		middlewares.SuccessResponse(`Login successful`,response )
 	}else {
 		middlewares.ErrorResponse("invalid Credentials", response)
