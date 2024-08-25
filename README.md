@@ -1,3 +1,5 @@
+## git push personal develop   
+
 MongodDB
 Golang
 React
@@ -5,8 +7,14 @@ Splitwise
 
 #### https://github.com/umangraval/Go-Mongodb-REST-boilerplate?tab=readme-ov-file
 #### https://github.com/react-boilerplate/react-boilerplate
-//npm run dev  //--vite
 
+## REACT:
+nvm use 20
+npm run dev  //--vite
+
+
+
+## GOLANG:
 pwd= /Users/nritunjaymishra/Documents/myproj/E-Amazon/Backend/backend-go
 go run main.go
 find . -name '*.go' | entr -r go run main.go
@@ -41,3 +49,7 @@ personal        https://mrt14august@github.com/sagar2602/E-Amazon.git (push)
 
 Backend/backend-go/controllers/personController.go
 Backend/backend-go/routes/routes.go
+
+
+
+### git push personal develop   

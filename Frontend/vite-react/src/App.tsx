@@ -3,6 +3,7 @@ import NavbarMain from './Component/Navbar'
 import Container from 'react-bootstrap/Container';
 import Signup from './Component/Auth/Signup'
 import AuthPage from './Component/Auth/AuthPage';
+import AppWrapper from './Component/AppWrapper'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import styled from 'styled-components';
@@ -49,19 +50,21 @@ function App() {
 //     </>
 //   )
 return (
-  /*  <StyledPage >
-    {/* <StyledContainer> */
-    <>
-    <NavbarMain />
- 
-
-    <AuthPage />
-    
-  
-    {/* </StyledContainer> */}
-   {/* </ StyledPage> */}
-  </>
+  // Opening the AppWrapper component with a default gradient background
+  <AppWrapper>
+    {/* Uncomment if you want to use StyledPage and StyledContainer components */}
+    {/* <StyledPage> */}
+      {/* <StyledContainer> */}
+        {/* <> */}
+          {/* Your application components */}
+          <NavbarMain />
+          <AuthPage />
+        {/* </> */}
+      {/* </StyledContainer> */}
+    {/* </StyledPage> */}
+  </AppWrapper>
 );
+
 }
 
 export default App

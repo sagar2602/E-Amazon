@@ -19,13 +19,12 @@ interface LoginFormState {
 
 const TabTitle = `
 background-color : #f9f9f9;
-width : 100%
+width : 100%;
 `;
 
 
 const FormContainer = styled.div`
   font-weight: 700;
-   
 
   form {
     display: flex;
