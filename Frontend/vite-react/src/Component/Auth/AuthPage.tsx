@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import SignupForm from './Signup';
 import Login from './Login';
 import styled, { keyframes } from 'styled-components';
+import  {  useEffect } from 'react';
 
 
 
@@ -20,6 +21,7 @@ const ToggleButton = styled.button`
   color: white;
   font-size: 16px;
   cursor: pointer;
+  margin-top : 42px;
 
   &:hover {
     background-color: #0056b3;
@@ -77,7 +79,19 @@ function AuthPage() {
       setShowSignup(!showSignup);
       setAnimate(false);
     }, 200); // Match this duration to the animation duration
+    
   };
+
+
+
+  // const YourComponent = () => {
+  //   const [data, setData] = useState(null);
+  
+  //   useEffect(() => {
+  //     // Fetch or update data when component mounts or when dependencies change
+      
+  //   }, [window && window.location]); // Add dependencies if needed
+  // }
 
   return (
     <div>

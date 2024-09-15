@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { BrowserRouter as Router } from 'react-router-dom'; // Import BrowserRouter
 import NavbarMain from './Component/Navbar'
 import Container from 'react-bootstrap/Container';
 import Signup from './Component/Auth/Signup'
@@ -52,16 +53,20 @@ function App() {
 return (
   // Opening the AppWrapper component with a default gradient background
   <AppWrapper>
+          <Router> {/* Wrap the application in Router */}
+
     {/* Uncomment if you want to use StyledPage and StyledContainer components */}
     {/* <StyledPage> */}
       {/* <StyledContainer> */}
         {/* <> */}
           {/* Your application components */}
           <NavbarMain />
-          <AuthPage />
+          { window && window.location.pathname == '/' && <AuthPage />}
         {/* </> */}
       {/* </StyledContainer> */}
     {/* </StyledPage> */}
+    </Router>
+
   </AppWrapper>
 );
 

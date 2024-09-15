@@ -11,7 +11,8 @@ Splitwise
 ## REACT:
 nvm use 20
 npm run dev  //--vite
-
+refer routig from here : https://ali-haydar.medium.com/navigation-within-a-react-app-4549398b30cd
+curent issue : buton vanishes after reload , after getting onn /home page
 
 
 ## GOLANG:

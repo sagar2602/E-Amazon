@@ -33,6 +33,7 @@ export const sendToGoBackend = async(data : Object, endpoint : string) => {
         }
       )
   console.log("🚀 ~ sendToGoBackend ~ response:", response)
+  return response
    } catch (error) {
     console.log("🚀 ~Error at sendToGoBackend ~ >>:", error)
     
